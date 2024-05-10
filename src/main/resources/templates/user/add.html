@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spa</title>
+</head>
+<body>
+<p th:text="${error}"></p>
+<form action="add" method="post">
+    <label>User Name: <input type="text" name="userName" th:value="${userName}"/>
+    </label><br><br>
+    <label>Email: <input type="email" name="email" th:value="${email}"/>
+    </label><br><br>
+    <label>Password: <input type="password" name="password"/>
+    </label><br><br>
+    <label>Confirm Password: <input type="password" name="confirmPassword"/>
+    </label><br><br>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
